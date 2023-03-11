@@ -14,14 +14,7 @@ import EditProduct from './components/EditProduct/EditProduct';
 
 function App() {
 
-  const [products, setProducts] = useState([
-    { id: 1, title: "Product1", price: 127 },
-    { id: 2, title: "Product2", price: 954 },
-    { id: 3, title: "Product3", price: 567 },
-    { id: 4, title: "Product4", price: 673 },
-    { id: 5, title: "Product5", price: 123 },
-    { id: 6, title: "Product6", price: 4567 }
-  ]);
+  const [products, setProducts] = useState();
 
   const deleteProducts = (productId) => {
     const newProducts = products.filter(product => product.id !== productId);

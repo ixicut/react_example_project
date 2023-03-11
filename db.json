@@ -24,6 +24,21 @@
       "id": 5,
       "title": "Product5",
       "price": 123
+    },
+    {
+      "title": "rgdfgdfg",
+      "price": "34",
+      "id": 6
+    },
+    {
+      "title": "test",
+      "price": "45",
+      "id": 7
+    },
+    {
+      "title": "test title",
+      "price": "67",
+      "id": 8
     }
   ]
 }
