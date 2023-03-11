@@ -113,7 +113,7 @@ app.delete('/products/:id', (req, res) => {
 });
 
 app.listen(port, () => {
-    console.log('Server listening on port 3000.');
+    console.log(`Server listening on port ${port}.`);
 });
 
 // CREATE TABLE IF NOT EXISTS products (
