@@ -30,7 +30,7 @@ function App() {
           <Route path='/about' element={<About/>}></Route>
           <Route path='/contact' element={<Contact/>}></Route>
           <Route path='/add' element={<AddProduct/>}></Route>
-          <Route path='/edit' element={<EditProduct/>}></Route>
+          <Route path='/edit/:id' element={<EditProduct/>}></Route>
         </Routes>
       </BrowserRouter>
     </div>

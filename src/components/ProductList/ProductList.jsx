@@ -29,7 +29,7 @@ const ProductList = () => {
     return (
         <div>
             <Link to="/add" className="button is-primary mt-5">Add new</Link>
-            <table className = "table is-striped is-fullwidth">
+            <table className="table is-striped is-fullwidth">
                 <thead>
                     <tr>
                         <th>No</th>
@@ -46,7 +46,7 @@ const ProductList = () => {
                                 <td>{product.title}</td>
                                 <td>{product.price}</td>
                                 <td>
-                                    <Link to={`/edit/${product.id}`} className="button is-small is-info">Edit</Link>
+                                    <Link to={`/edit/${product.id}`} className="button is-small is-info mr-3">Edit</Link>
                                     <button onClick={() => deleteProduct(product.id)} className="button is-small is-danger">Delete</button>
                                 </td>
                             </tr>

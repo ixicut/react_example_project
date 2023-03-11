@@ -1,9 +1,9 @@
 {
   "products": [
     {
-      "id": 1,
-      "title": "Product1",
-      "price": 127
+      "title": "PRODUCT1111",
+      "price": "56",
+      "id": 1
     },
     {
       "id": 2,
@@ -39,6 +39,16 @@
       "title": "test title",
       "price": "67",
       "id": 8
+    },
+    {
+      "title": "test",
+      "price": "56",
+      "id": 9
+    },
+    {
+      "title": "added via page",
+      "price": "111",
+      "id": 10
     }
   ]
 }
