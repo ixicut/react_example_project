@@ -42,6 +42,40 @@ app.get('/products', (req, res) => {
     });
 });
 
+app.get('/products/:id', (req, res) => {
+    const productId = req.params.id;
+
+    const query = `SELECT * FROM products where id = ${productId}`;
+
+    connection.query(query, (error, results, fields) => {
+        if (error) {
+            console.error('Error querying the database: ' + error.stack);
+            return res.status(500).send('Error querying the database');
+        }
+        
+        if(results.length === 0) {
+            return res.status(404).json({ error: 'Product not found.' });
+        }
+
+        res.json(results[0]);
+    });
+});
+
+app.post('/products', (req, res) => {
+    const { title, price } = req.body;
+
+    const sql = 'INSERT INTO products(title,price) VALUES(?,?)';
+
+    connection.query(sql, [title, price], (error, results) => {
+        if (error) {
+            console.error(error);
+            res.status(500).send('Error deleting product');
+        } else {
+            res.send(`Product added successfully`);
+        }
+    });
+});
+
 app.put('/products/:id', (req, res) => {
     const productId = req.params.id;
     const { title, price } = req.body;
