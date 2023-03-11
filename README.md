@@ -1,70 +1,44 @@
-# Getting Started with Create React App
+# React CRUD Example Project
+This is an example project that demonstrates how to implement CRUD (Create, Read, Update, Delete) operations using React, json-server, and a node.js server using the "express" and "mysql" libraries.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Prerequisites
+Before running this project, you must have the following software installed on your system:
 
-## Available Scripts
+* Node.js (version 14 or later)
+* MySQL (version 5.7 or later)
 
-In the project directory, you can run:
+## Installation
+1. Clone this repository to your local machine.
+2. Navigate to the project root directory.
+2. Install dependencies by running the following command:
 
-### `npm start`
+``` npm install ```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+4. Start json-server by running the following command:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+``` npm run json-server ```
 
-### `npm test`
+5. Start the node.js server by running the following command:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+``` npm run server ```
 
-### `npm run build`
+6. Open your browser and navigate to [http://localhost:3000](#heading-1) to view the React application.
+## Usage
+This React application allows you to perform CRUD operations on a product inventory. You can create new products, view existing products, update product information, and delete products.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+To create a new product, click the "Add Product" button on the product list page. Fill in the product information on the form and click "Add Product" to create the new product.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+To view a product's details or update its information, click the "Edit" in the product list.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+To delete a product, click the "Delete" button on the product detail page.
 
-### `npm run eject`
+## API Endpoints
+The node.js server provides the following API endpoints:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+* GET /products - Retrieves a list of all products.
+* GET /products/:id - Retrieves a single product by ID.
+* POST /products - Creates a new product.
+* PUT /products/:id - Updates an existing product by ID.
+* DELETE /products/:id - Deletes an existing product by ID.
+## Credits
+This project was created by ixicut. It is licensed under the MIT License.
