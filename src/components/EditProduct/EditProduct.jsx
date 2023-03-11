@@ -52,7 +52,7 @@ const EditProduct = () => {
 
                 <div class="field is-grouped">
                     <div class="control">
-                        <button class="button is-link">Add product</button>
+                        <button class="button is-link">Edit product</button>
                     </div>
                 </div>
             </form>

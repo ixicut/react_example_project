@@ -1,8 +1,8 @@
 {
   "products": [
     {
-      "title": "PRODUCT1111",
-      "price": "56",
+      "title": "PRODUCT111111122222",
+      "price": "1111111",
       "id": 1
     },
     {
@@ -46,9 +46,19 @@
       "id": 9
     },
     {
-      "title": "added via page",
-      "price": "111",
+      "title": "fgdhdfgh",
+      "price": "234",
       "id": 10
+    },
+    {
+      "title": "ffghfdgh",
+      "price": "345",
+      "id": 11
+    },
+    {
+      "title": "ADDING A PRODUCT | edited",
+      "price": "11111",
+      "id": 12
     }
   ]
 }
